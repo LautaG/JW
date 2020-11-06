@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Johnnie Walker</title>
+
+	<link rel="stylesheet" href="css/bulma.min.css" />
+	<link rel="stylesheet" href="css/helpers.css" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/glide.core.min.css" />
+	<link rel="stylesheet" href="css/glide.theme.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<main>
+		<section id="header_title" class="center">
+			<h1>LESS TALKING, MORE SHOPPING</h1>
+		</section>
+
+		<section id="video_1" class="center-column pb-5">
+			<article id="video_1_cont">
+				<img loading="lazy" src="media/video_1.jpg" alt="" id="video_1_cont_img" />
+				<img loading="lazy" src="media/video_1_m.jpg" alt="" id="video_1_cont_img_m" />
+				<img loading="lazy" src="media/play_m.png" onclick="reproducir_1();play_video_1();" alt=""
+					id="video_1_cont_play" preload="none" />
+				<div id="vid_1">
+					<video preload="none" src="media/video_1.mp4" id="video_1_cont_video" controls></video>
+				</div>
+			</article>
+		</section>
+
+		<section id="jw_menu" class="center-column pb-6">
+			<h2 id="jw_menu_title" class="pb-6">
+				Shake <span>up</span> the plans!
+			</h2>
+			<div class="center">
+				<a href="#jw_menu" id="jw_menu_item_1">Inicio</a>
+				<a href="#banner_1" id="jw_menu_item_2">Edición especial</a>
+				<a href="#video_2" id="jw_menu_item_3">The unexpected malt</a>
+				<a href="#sqs_anchor" id="jw_menu_item_7">Sabores que suenan</a>
+				<a href="#cc_anchor" id="jw_menu_item_8">Casa club</a>
+				<a href="#bl_anchor" id="jw_menu_item_4">Blue Label</a>
+				<a href="#jw_slider" id="jw_menu_item_6">Más de Johnnie</a>
+				<a href="#video_3" id="jw_menu_item_5">Shake up the highballs!</a>
+			</div>
+		</section>
+
+		<section id="banner_1" class="pt-5 px-6">
+			<h3 id="video_2_title" class="pb-5">EDICIÓN ESPECIAL</h3>
+			<div class="glide_banner_1">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide">
+							<a class="vip_item"
+								href="https://articulo.mercadolibre.com.mx/MLM-823194406-whisky-johnnie-walker-red-ed-especial-aniversario-de-700-ml-_JM">
+								<img loading="lazy" class="disp_desk" src="media/RED.jpg" alt="" />
+								<img loading="lazy" class="disp_mob" src="media/RED_m.jpg" alt="" /></a>
+						</li>
+						<li class="glide__slide">
+							<a class="vip_item"
+								href="https://articulo.mercadolibre.com.mx/MLM-677148516-whisky-johnnie-walker-gold-label-reserve-de-750ml-_JM">
+								<img loading="lazy" class="disp_desk" src="media/GOLD.jpg" alt="" />
+								<img loading="lazy" class="disp_mob" src="media/GOLD_m.jpg" alt="" />
+							</a> </li>
+						<li class="glide__slide">
+							<a class="vip_item"
+								href="https://articulo.mercadolibre.com.mx/MLM-823189316-whisky-johnnie-walker-black-ed-especial-aniversario-de-750ml-_JM">
+								<img loading="lazy" class="disp_desk" src="media/BLACK.jpg" alt="" />
+								<img loading="lazy" class="disp_mob" src="media/BLACK_m.jpg" alt="" />
+							</a> </li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="video_2" class="pt-6">
+			<h3 id="video_2_title">THE UNEXPECTED MALT</h3>
+			<article id="video_2_cont">
+				<img loading="lazy" src="media/video_2.jpg" alt="" id="video_2_cont_img" />
+				<img loading="lazy" src="media/video_2_m.jpg" alt="" id="video_2_cont_img_m" />
+				<img loading="lazy" src="media/play_m.png" onclick="reproducir_2();play_video_2();" alt=""
+					id="video_2_cont_play" preload="none" />
+				<div id="vid_2">
+					<video preload="none" src="media/video_2.mp4" id="video_2_cont_video" controls></video>
+				</div>
+			</article>
+		</section>
+
+		<section id="grid" class="px-6 py-5">
+			<article id="grid_1">
+				<a href="https://open.spotify.com/user/w0d3h76s1f11md25jrx3bz6z9">
+					<h3 id="grid_1_title" class="pb-5">
+						Sabores que suenan
+						<div id="sqs_anchor"></div>
+					</h3>
+					<div id="grid_1_img">
+						<img loading="lazy" src="media/BOLA_DISCO.jpg" alt="" />
+					</div>
+				</a>
+			</article>
+			<article id="grid_2">
+				<a href="https://www.casa-club.mx/shakeitup/">
+					<h3 id="grid_2_title" class="pb-5">
+						Casa Club
+						<div id="cc_anchor"></div>
+					</h3>
+					<div id="grid_2_img">
+						<img loading="lazy" src="media/TOCA_DISCOS.jpg" alt="" />
+					</div>
+				</a>
+			</article>
+			<article id="grid_3">
+				<h3 id="grid_3_title" class="py-5">
+					Blue Label
+					<div id="bl_anchor"></div>
+				</h3>
+				<div id="grid_3_img">
+					<a class="vip_item"
+						href="https://articulo.mercadolibre.com.mx/MLM-602683370-whisky-johnnie-walker-etiqueta-azul-750-ml--_JM">
+						<img loading="lazy" class="disp_desk" src="media/BLUE_LABEL.jpg" alt="" />
+						<img loading="lazy" class="disp_mob" src="media/BLUE_LABEL_m.jpg" alt="" />
+					</a>
+				</div>
+			</article>
+		</section>
+
+		<section id="jw_slider" class="px-6 py-5">
+			<article id="jw_slider_1" class="glide_slider">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide">
+							<img loading="lazy" src="media/facts_1.jpg" alt="" />
+						</li>
+						<li class="glide__slide">
+							<img loading="lazy" src="media/facts_2.gif" alt="" />
+						</li>
+						<li class="glide__slide">
+							<img loading="lazy" src="media/facts_3.jpg" alt="" />
+						</li>
+					</ul>
+				</div>
+				<div class="glide__bullets" data-glide-el="controls[nav]">
+					<button class="glide__bullet" data-glide-dir="=0"></button>
+					<button class="glide__bullet" data-glide-dir="=1"></button>
+					<button class="glide__bullet" data-glide-dir="=2"></button>
+				</div>
+			</article>
+			<div id="jw_slider_2" class="center px-6">
+				<img loading="lazy" src="media/jw.png" alt="" />
+			</div>
+		</section>
+
+		<section id="jw_prod_carousel">
+			<h3 id="jw_prod_carousel_title">ETIQUETAS JOHNNIE WALKER Y EDICIONES ESPECIALES</h3>
+			<div class="glide_prod">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_927553-MLM43613711690_092020-O.webp" alt="">
+								<div class="prod_text">
+									<p>Red Ed Especial Aniversario De 700 Ml</p>
+									<a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-823194406-whisky-johnnie-walker-red-ed-especial-aniversario-de-700-ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_658355-MLM43613711687_092020-O.webp" alt="">
+								<div class="prod_text">
+									<p>Black Ed Especial Aniversario De 750 Ml</p>
+									<a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-823189316-whisky-johnnie-walker-black-ed-especial-aniversario-de-750ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<div class="center" style="height: 80%;">
+									<img loading="lazy" src="media/prod/D_NQ_NP_672624-MLM40187652299_122019-O.webp"
+										alt="">
+								</div>
+								<div class="prod_text">
+									<p>Black 750 Ml Y Una Bocina De Regalo</p>
+									<a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-745765330-2-botellas-de-j-walker-black-750-ml-y-una-bocina-de-regalo-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_958248-MLM31367981830_072019-O.webp" alt="">
+								<div class="prod_text">
+									<p>Etiqueta Roja 700 Ml</p>
+									<a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-602728827-whisky-johnnie-walker-etiqueta-roja-700-ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_641354-MLM31223941535_062019-O.webp" alt="">
+								<div class="prod_text">
+									<p>Double Black 750 Ml</p>
+									<a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-602682972-whisky-johnnie-walker-double-black-750-ml--_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="vip_item small center-column">
+								<div class="center" style="height: 80%;">
+									<img loading="lazy" src="media/prod/D_NQ_NP_883329-MLM32005334919_082019-O.webp"
+										alt="">
+								</div>
+								<div class="prod_text">
+									<p>Etiqueta Roja Miniatura 50 Ml</p>
+									<a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-692148637-whisky-johnnie-walker-etiqueta-roja-miniatura-50ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_957557-MLM31223849746_062019-O.webp" alt="">
+								<div class="prod_text">
+									<p>Etiqueta Negra 750 Ml</p>
+									<a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-602682518-whisky-johnnie-walker-etiqueta-negra-750-ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_933361-MLM31367952239_072019-O.webp" alt="">
+								<div class="prod_text">
+									<p>Etiqueta Negra 1000 Ml</p>
+									<a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-602682701-whisky-johnnie-walker-etiqueta-negra-1000-ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_705633-MLM31223847903_062019-O.webp" alt="">
+								<div class="prod_text">
+									<p>Etiqueta Azul 750 Ml</p>
+									<a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-602683370-whisky-johnnie-walker-etiqueta-azul-750-ml--_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_824158-MLM31223888944_062019-O.webp" alt="">
+								<div class="prod_text">
+									<p>Etiqueta Verde 700 Ml</p>
+									<a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-602728948-whisky-johnnie-walker-etiqueta-verde-700-ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_938483-MLM42461675319_072020-O.webp" alt="">
+								<div class="prod_text">
+									<p>Platinum 18 Años 750 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-602728765-whisky-johnnie-walker-platinum-18-anos-750-ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<div class="center" style="height: 80%;">
+									<img loading="lazy" src="media/prod/D_NQ_NP_888605-MLM32353861961_092019-O.webp"
+										alt="">
+								</div>
+								<div class="prod_text">
+									<p>Etiqueta Negra Pocket 6 Pzas 200 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-723476644-whisky-johnnie-walker-etiqueta-negra-pocket-6-pzas-200-ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="vip_item smaller center-column">
+								<div class="center" style="height: 80%;">
+									<img loading="lazy" src="media/prod/D_NQ_NP_783644-MLM32353843221_092019-O.webp"
+										alt="">
+								</div>
+								<div class="prod_text">
+									<p>Etiqueta Roja Pocket 200 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-723476584-whisky-johnnie-walker-etiqueta-roja-pocket-200-ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<div class="center" style="height: 80%;">
+									<img loading="lazy" src="media/prod/D_NQ_NP_722183-MLM40520512757_012020-O.webp"
+										alt="">
+								</div>
+								<div class="prod_text">
+									<p>Etiqueta Negra De 750 Ml + 2 Vasos Hb</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-722161706-whisky-johnnie-walker-etiqueta-negra-de-750ml-2-vasos-hb-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_895450-MLM32233136604_092019-O.webp" alt="">
+								<div class="prod_text">
+									<p>Etiqueta Negra De 750 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-677148497-whisky-johnnie-walker-etiqueta-negra-de-750ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<div class="center" style="height: 80%;">
+									<img loading="lazy" src="media/prod/D_NQ_NP_955263-MLM32417266488_102019-O.webp"
+										alt="">
+								</div>
+								<div class="prod_text">
+									<p>Etiqueta negra Mini Scotch 200ml Cj 6pzas</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-724775365-whisky-johnnie-walker-black-label-mini-scotch-200ml-cj-6pzas-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="vip_item smallest center-column">
+								<div class="center" style="height: 80%;">
+									<img loading="lazy" src="media/prod/D_NQ_NP_691685-MLM32354435768_092019-O.webp"
+										alt="">
+								</div>
+								<div class="prod_text">
+									<p>Black Label Mini Scotch 200 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-723480331-whisky-johnnie-walker-etiqueta-negra-mini-scotch-de-200ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_955351-MLM40520431209_012020-O.webp" alt="">
+								<div class="prod_text">
+									<p>Etiqueta Verde 15 Años De 700 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-677148473-whisky-jhonnie-walker-etiqueta-verde-15-anos-de-700ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_672380-MLM32233092404_092019-O.webp" alt="">
+								<div class="prod_text">
+									<p>Etiqueta Roja De 1000 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-677148513-whisky-johnnie-walker-etiqueta-roja-de-1000-ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="vip_item smallest center-column">
+								<div class="center" style="height: 80%;">
+									<img loading="lazy" src="media/prod/D_NQ_NP_717152-MLM32354440750_092019-O.webp"
+										alt="">
+								</div>
+								<div class="prod_text">
+									<p>Etiqueta Roja Mini Scotch De 200 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-723480333-whisky-johnnie-walker-etiqueta-roja-mini-scotch-de-200ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_856377-MLM32896343702_112019-O.webp" alt="">
+								<div class="prod_text">
+									<p>Double Black De 750 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-677148479-whisky-johnnie-walker-double-black-de-750ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_680607-MLM40520593819_012020-O.webp" alt="">
+								<div class="prod_text">
+									<p>White De 700 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-677148518-whisky-johnnie-walker-white-de-700ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_837704-MLM31986364392_082019-O.webp" alt="">
+								<div class="prod_text">
+									<p>Blue Label Tiffanny De 750 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-677148493-whisky-johnnie-walker-blue-label-tiffanny-de-750ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_697935-MLM43234755444_082020-O.webp" alt="">
+								<div class="prod_text">
+									<p>18 Años Aged De 750 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-807828151-whisky-johnnie-walker-18-anos-aged-de-750-ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_613491-MLM40520655445_012020-O.webp" alt="">
+								<div class="prod_text">
+									<p>Etiqueta Negra De 1000 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-677148500-whisky-johnnie-walker-etiqueta-negra-de-1000-ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_625991-MLM32233159864_092019-O.webp" alt="">
+								<div class="prod_text">
+									<p>Gold Label Reserve 750 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-677148516-whisky-johnnie-walker-gold-label-reserve-de-750ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="center-column">
+								<img loading="lazy" src="media/prod/D_NQ_NP_958248-MLM31367981830_072019-O.webp" alt="">
+								<div class="prod_text">
+									<p>Etiqueta Roja 700 Ml</p> <a class="vip_item"
+										href="https://articulo.mercadolibre.com.mx/MLM-602728827-whisky-johnnie-walker-etiqueta-roja-700-ml-_JM">Comprar</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+							src="media/chevron-circle-left-solid.svg" alt=""></button>
+					<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+							src="media/chevron-circle-right-solid.svg" alt=""></button>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="drink_slider" class="drink_slider pb-6" style=" position: relative;">
+			<h3 id="video_2_title">SHAKE UP THE HIGHBALLS!</h3>
+			<div class="glide__track" data-glide-el="track">
+				<ul class="glide__slides">
+					<li class="glide__slide">
+						<article id="drink_slider_1">
+							<img loading="lazy" src="media/video_drink_1-min.jpg" alt="" id="drink_slider_1_img" />
+							<img loading="lazy" src="media/video_drink_1_m-min.jpg" alt="" id="drink_slider_1_img_m" />
+							<img loading="lazy" src="media/play_m.png"
+								onclick="reproducir_drink_1();play_video_drink_1();" alt="" id="drink_slider_1_play" />
+							<div id="vid_drink_1">
+								<video preload="none" src="media/Johnnie Lemon Alta Ajustes V3.mp4"
+									id="drink_slider_1_video" controls></video>
+							</div>
+
+					</li>
+					<li class="glide__slide">
+						<article id="drink_slider_2">
+							<img loading="lazy" src="media/video_drink_2-min.jpg" alt="" id="drink_slider_2_img" />
+							<img loading="lazy" src="media/video_drink_2_m-min.jpg" alt="" id="drink_slider_2_img_m" />
+							<img loading="lazy" src="media/play_m.png"
+								onclick="reproducir_drink_2();play_video_drink_2();" alt="" id="drink_slider_2_play"
+								preload="none" />
+							<div id="vid_drink_2">
+								<video preload="none" src="media/Johnnie Ginger Alta OK V2.mp4"
+									id="drink_slider_2_video" controls></video>
+							</div>
+
+					</li>
+					<li class="glide__slide">
+						<article id="drink_slider_3">
+							<img loading="lazy" src="media/video_drink_3-min.jpg" alt="" id="drink_slider_3_img" />
+							<img loading="lazy" src="media/video_drink_3_m-min.jpg" alt="" id="drink_slider_3_img_m" />
+							<img loading="lazy" src="media/play_m.png"
+								onclick="reproducir_drink_3();play_video_drink_3();" alt="" id="drink_slider_3_play"
+								preload="none" />
+							<div id="vid_drink_3">
+								<video preload="none" src="media/Johnnie Gold Alta Ajustes V3.mp4"
+									id="drink_slider_3_video" controls></video>
+							</div>
+
+					</li>
+					<li class="glide__slide">
+						<article id="drink_slider_4">
+							<img loading="lazy" src="media/video_drink_4-min.jpg" alt="" id="drink_slider_4_img" />
+							<img loading="lazy" src="media/video_drink_4_m-min.jpg" alt="" id="drink_slider_4_img_m" />
+							<img loading="lazy" src="media/play_m.png"
+								onclick="reproducir_drink_4();play_video_drink_4();" alt="" id="drink_slider_4_play"
+								preload="none" />
+							<div id="vid_drink_4">
+								<video preload="none" src="media/Johnnie Green Alta OK V3.mp4.mp4"
+									id="drink_slider_4_video" controls></video>
+							</div>
+
+					</li>
+					<li class="glide__slide">
+						<article id="drink_slider_5">
+							<img loading="lazy" src="media/video_drink_5-min.jpg" alt="" id="drink_slider_5_img" />
+							<img loading="lazy" src="media/video_drink_5_m-min.jpg" alt="" id="drink_slider_5_img_m" />
+							<img loading="lazy" src="media/play_m.png"
+								onclick="reproducir_drink_5();play_video_drink_5();" alt="" id="drink_slider_5_play"
+								preload="none" />
+							<div id="vid_drink_5">
+								<video preload="none" src="media/Johnnie Fire Alta Ajustes V3.mp4"
+									id="drink_slider_5_video" controls></video>
+							</div>
+
+					</li>
+				</ul>
+			</div>
+			<div class="glide__bullets_drink" data-glide-el="controls[nav]">
+				<button class="glide__bullet" data-glide-dir="=0"></button>
+				<button class="glide__bullet" data-glide-dir="=1"></button>
+				<button class="glide__bullet" data-glide-dir="=2"></button>
+				<button class="glide__bullet" data-glide-dir="=3"></button>
+				<button class="glide__bullet" data-glide-dir="=4"></button>
+
+			</div>
+		</section>
+	</main>
+
+	<script src="js/video_play.js"></script>
+	<script src="js/glide.min.js"></script>
+	<script>
+		const config_banner_1 = {
+			type: "slider",
+			perView: 1,
+			autoplay: 4500,
+			hoverpause: false,
+			gap: 0,
+			animationDuration: 600,
+		};
+		new Glide(".glide_banner_1", config_banner_1).mount();
+		const config_slider = {
+			type: "slider",
+			perView: 1,
+			autoplay: 4500,
+			hoverpause: false,
+			gap: 0,
+			animationDuration: 300,
+		};
+		new Glide(".glide_slider", config_slider).mount();
+		const drink_slider = {
+			type: "slider",
+			perView: 1,
+			autoplay: 5000,
+			gap: 0,
+			animationDuration: 300,
+		};
+		new Glide(".drink_slider", drink_slider).mount();
+		const glide_prod = {
+			type: "carousel",
+			perView: 4,
+			autoplay: 5000,
+			gap: 0,
+			animationDuration: 300,
+			breakpoints: {
+				769: {
+					perView: 3
+				},
+				576: {
+					perView: 1
+				}
+			}
+		};
+		new Glide(".glide_prod", glide_prod).mount();
+	</script>
+</body>
+
+</html>

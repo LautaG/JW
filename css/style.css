@@ -1,0 +1,646 @@
+@font-face {
+  font-family: "JohnnieWalker-Headline";
+  src: url("../fonts/JohnnieWalkerWeb-Headline.woff2") format("woff2"), url("../fonts/JohnnieWalkerWeb-Headline.woff") format("woff");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 100%;
+  font-size: 14px;
+  margin: auto;
+  background-color: #eaaa00;
+  font-family: "JohnnieWalker-Headline", Arial, sans-serif;
+  background-image: url(../media/noise.png);
+  background-repeat: repeat;
+}
+
+.disp_mob {
+  display: none;
+}
+
+#header_title,
+#video_1,
+#jw_menu,
+#banner_1,
+#video_2,
+#grid,
+#jw_slider,
+#jw_prod_carousel,
+#drink_slider {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#header_title {
+  height: 15em;
+}
+
+#header_title h1 {
+  font-size: 7em;
+  color: #fff;
+  padding: 0px 1rem;
+  border: 0.9rem solid #fff;
+}
+
+#video_1_cont,
+#video_2_cont,
+#drink_slider_1,
+#drink_slider_2,
+#drink_slider_3,
+#drink_slider_4,
+#drink_slider_5 {
+  position: relative;
+  padding: 1rem 3rem;
+  height: 100%;
+  width: 100%;
+}
+
+#video_1_cont_img, #video_1_cont_img_m,
+#video_2_cont_img,
+#video_2_cont_img_m,
+#drink_slider_1_img,
+#drink_slider_1_img_m,
+#drink_slider_2_img,
+#drink_slider_2_img_m,
+#drink_slider_3_img,
+#drink_slider_3_img_m,
+#drink_slider_4_img,
+#drink_slider_4_img_m,
+#drink_slider_5_img,
+#drink_slider_5_img_m {
+  cursor: pointer;
+  width: 100%;
+}
+
+#video_1_cont_img_m,
+#video_2_cont_img_m,
+#drink_slider_1_img_m,
+#drink_slider_2_img_m,
+#drink_slider_3_img_m,
+#drink_slider_4_img_m,
+#drink_slider_5_img_m {
+  display: none;
+}
+
+#video_1_cont_play,
+#video_2_cont_play,
+#drink_slider_1_play,
+#drink_slider_2_play,
+#drink_slider_3_play,
+#drink_slider_4_play,
+#drink_slider_5_play {
+  width: 70px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#video_1_cont_video,
+#video_2_cont_video,
+#drink_slider_1_video,
+#drink_slider_2_video,
+#drink_slider_3_video,
+#drink_slider_4_video,
+#drink_slider_5_video {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  #jw div a {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+#jw_menu_title {
+  font-size: 5.5em;
+  color: #fff;
+}
+
+#jw_menu_title span {
+  color: #f3dd6d;
+}
+
+#jw_menu div {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 20px;
+}
+
+#jw_menu a {
+  color: #fff;
+  font-size: 2.5em;
+  line-height: 1;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 15px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#jw_menu a:hover {
+  color: #eaaa00;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+#banner_1 .glide__slides {
+  -webkit-transform: none !important;
+          transform: none !important;
+  width: auto !important;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "slide";
+}
+
+#banner_1 .glide__slide {
+  position: relative;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: slide;
+}
+
+#banner_1 .glide__slide--active {
+  z-index: 1;
+  opacity: 1;
+}
+
+#vid_1,
+#vid_2,
+#vid_drink_1,
+#vid_drink_2,
+#vid_drink_3,
+#vid_drink_4,
+#vid_drink_5 {
+  padding: 1rem 3rem;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+}
+
+#banner_1_title,
+#video_2_title,
+#grid_1_title,
+#grid_2_title,
+#grid_3_title,
+#jw_prod_carousel_title {
+  font-size: 4em;
+  color: #fff;
+  text-align: center;
+}
+
+#grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 3em;
+          column-gap: 3em;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "dato_1 dato_2" "dato_3 dato_3";
+}
+
+#grid a div {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#grid a:hover div {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.4);
+  -webkit-transform: perspective(500px) rotateY(3deg) rotateX(3deg);
+          transform: perspective(500px) rotateY(3deg) rotateX(3deg);
+}
+
+#grid_1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: dato_1;
+}
+
+#grid_1_title {
+  position: relative;
+}
+
+#grid_1_title div {
+  position: absolute;
+  top: -2rem;
+  left: 0px;
+}
+
+#grid_2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: dato_2;
+}
+
+#grid_2_title {
+  position: relative;
+}
+
+#grid_2_title div {
+  position: absolute;
+  top: -2rem;
+  left: 0px;
+}
+
+#grid_3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: dato_3;
+}
+
+#grid_3_title {
+  position: relative;
+}
+
+#grid_3_title div {
+  position: absolute;
+  top: -1rem;
+  left: 0px;
+}
+
+#jw_prod_carousel {
+  position: relative;
+  padding: 1rem 3rem;
+}
+
+#jw_prod_carousel .glide__slide {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+#jw_prod_carousel .glide__slide > div {
+  padding: 1rem;
+  background-color: #fff;
+  height: 550px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#jw_prod_carousel .glide__slide > div.small img {
+  max-width: 60%;
+}
+
+#jw_prod_carousel .glide__slide > div.smaller img {
+  max-width: 75%;
+}
+
+#jw_prod_carousel .glide__slide > div.smallest img {
+  max-width: 63%;
+}
+
+#jw_prod_carousel .glide__slide > div img {
+  max-height: 470px;
+}
+
+#jw_prod_carousel .glide__slide > div .prod_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1rem;
+  height: 18%;
+}
+
+#jw_prod_carousel .glide__slide > div p {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+}
+
+#jw_prod_carousel .glide__slide > div a {
+  color: #eaaa00;
+  font-size: 1.25rem;
+  line-height: 1;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 3px 15px;
+  border: 3px solid #eaaa00;
+  border-radius: 50px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#jw_prod_carousel .glide__slide > div a:hover {
+  color: #fff;
+  background-color: #eaaa00;
+  -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+#jw_slider {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
+      grid-template-areas: "slider title";
+}
+
+#jw_slider_1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: slider;
+  position: relative;
+}
+
+#jw_slider_1.glide--swipeable {
+  cursor: initial;
+}
+
+#jw_slider_1 .glide__slides {
+  -webkit-transform: none !important;
+          transform: none !important;
+  width: auto !important;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "slide";
+}
+
+#jw_slider_1 .glide__slide {
+  position: relative;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: slide;
+}
+
+#jw_slider_1 .glide__slide--active {
+  z-index: 1;
+  opacity: 1;
+}
+
+#jw_slider_2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+}
+
+@media screen and (max-width: 769px) {
+  main {
+    font-size: 12px;
+  }
+  .pb-6 {
+    padding-bottom: 2rem !important;
+  }
+  .pt-6 {
+    padding-top: 2rem !important;
+  }
+  .pt-5 {
+    padding-top: 1.5rem !important;
+  }
+  .px-6 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  .py-6 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  #header_title,
+  #video_1,
+  #jw_menu,
+  #banner_1,
+  #video_2,
+  #grid,
+  #jw_slider,
+  #video_3,
+  #jw_prod_carousel {
+    max-width: initial;
+    margin: auto;
+  }
+  #video_1_cont,
+  #video_2_cont {
+    padding: 2rem;
+  }
+  #drink_slider_1,
+  #drink_slider_2,
+  #drink_slider_3,
+  #drink_slider_4,
+  #drink_slider_5 {
+    padding: 1rem 2rem;
+  }
+  #vid_1,
+  #vid_2 {
+    padding: 2rem;
+  }
+  #header_title {
+    height: 12em;
+  }
+  #header_title h1 {
+    font-size: 5em;
+    border: 0.5rem solid #fff;
+    padding: 0px 0.5rem;
+  }
+  #jw_menu_title {
+    font-size: 4em;
+  }
+  #jw_menu div {
+    gap: 1rem;
+  }
+  #jw_menu a {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    border: 2px solid #fff;
+    padding: 3px 10px;
+  }
+  #banner_1_title,
+  #video_2_title,
+  #grid_1_title,
+  #grid_2_title,
+  #grid_3_title,
+  #jw_prod_carousel_title {
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main {
+    font-size: 10px;
+  }
+  .pb-6 {
+    padding-bottom: 1rem !important;
+  }
+  .pb-5 {
+    padding-bottom: 0.5rem !important;
+  }
+  .pt-6 {
+    padding-top: 1rem !important;
+  }
+  .pt-5 {
+    padding-top: 1rem !important;
+  }
+  .px-6 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .py-6 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .py-5 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+  .disp_desk {
+    display: none;
+  }
+  .disp_mob {
+    display: block;
+  }
+  #video_1_cont,
+  #video_2_cont,
+  #drink_slider_1,
+  #drink_slider_2,
+  #drink_slider_3,
+  #drink_slider_4,
+  #drink_slider_5 {
+    padding: 1rem;
+  }
+  #video_1_cont_play,
+  #video_2_cont_play,
+  #drink_slider_1_play,
+  #drink_slider_2_play,
+  #drink_slider_3_play,
+  #drink_slider_4_play,
+  #drink_slider_5_play {
+    width: 50px;
+  }
+  #video_1_cont_img,
+  #video_2_cont_img,
+  #drink_slider_1_img,
+  #drink_slider_2_img,
+  #drink_slider_3_img,
+  #drink_slider_4_img,
+  #drink_slider_5_img {
+    display: none;
+  }
+  #video_1_cont_img_m,
+  #video_2_cont_img_m,
+  #drink_slider_1_img_m,
+  #drink_slider_2_img_m,
+  #drink_slider_3_img_m,
+  #drink_slider_4_img_m,
+  #drink_slider_5_img_m {
+    display: block;
+  }
+  #vid_1,
+  #vid_2,
+  #vid_drink_1,
+  #vid_drink_2,
+  #vid_drink_3,
+  #vid_drink_4,
+  #vid_drink_5 {
+    padding: 1rem;
+  }
+  #header_title {
+    height: 8em;
+  }
+  #header_title h1 {
+    font-size: 3em;
+    border: 0.25rem solid #fff;
+    padding: 2px 0.25rem;
+  }
+  #banner_1 {
+    padding-bottom: 1rem;
+  }
+  #jw_menu_title {
+    font-size: 2.5em;
+    letter-spacing: 1px;
+  }
+  #jw_menu div {
+    gap: 10px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  #jw_menu a {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    border: 2px solid #fff;
+    padding: 3px 10px;
+  }
+  #grid {
+    display: -ms-grid;
+    display: grid;
+    gap: 2em;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "dato_1" "dato_2" "dato_3";
+  }
+  #grid_3_title {
+    padding-top: 0px !important;
+  }
+  #jw_slider {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "title" "slider";
+  }
+  #jw_slider_2 img {
+    padding-bottom: 2rem;
+    width: 100px;
+  }
+  #jw_prod_carousel {
+    padding: 1rem 1rem;
+  }
+  #jw_prod_carousel .glide__slide > div {
+    height: 600px;
+  }
+  #jw_prod_carousel .glide__arrows {
+    display: block;
+  }
+  #banner_1_title,
+  #video_2_title,
+  #grid_1_title,
+  #grid_2_title,
+  #grid_3_title,
+  #jw_prod_carousel_title {
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
