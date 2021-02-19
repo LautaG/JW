@@ -1,5 +1,6 @@
 # JW
-Proyecto desarrollado para Johnnie Walker en Mercado Libre México. Se me entrego el diseño y la tarea de desarrollarlo y adaptarlo a navegadores.
+
+Proyecto de maquetado para Johnnie Walker - Mercado libre México. el diseño no es de mi autoría, se me entrego junto a la tarea de desarrollarlo y también hacerlo responsive. 
 
 ## Comenzando 🚀
 
